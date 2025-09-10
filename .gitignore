@@ -1,0 +1,8 @@
+# Environnement virtuel
+myenv/
+
+# Fichier de configuration sensible
+.env
+
+# Fichiers de base de données par défaut
+*.sqlite3

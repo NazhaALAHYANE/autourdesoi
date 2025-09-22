@@ -6,3 +6,7 @@ myenv/
 
 # Fichiers de base de données par défaut
 *.sqlite3
+
+----------------------------------------
+__pycache__/
+*.pyc

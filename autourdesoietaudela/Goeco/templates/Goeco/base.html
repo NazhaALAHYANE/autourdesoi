@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Goeco{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Goeco/css/style.css' %}?v={{ timestamp }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="section-main">
+    <header class="header-color">
+        <h1 class="logo-project">Goeco</h1>
+        <nav class="nav-items">
+            <a class="link-nav" href="{% url 'home' %}">Accueil</a>
+            <a class="link-nav" href="">Composteurs</a>
+            <a class="link-nav" href="">Recycleries et ressourceries</a>
+        </nav>
+    </header>
+    <main class="first-page">
+        {% block content %}
+        <div>   
+            <div class="image-bloc">  
+              {% load static %}  
+              <img src="{% static 'Goeco/images/Image_Eco.png' %}" alt="illustration de mains avec des références écolo">
+            </div>
+            <p class="text-intro">Bienvenue !<br>Retrouvez ici, toutes les initiatives écologique mise en place par la Ville de Paris.<br>Il y en a forcément une près de chez vous !</p>
+        </div>
+        {% endblock %}
+    </main>
+    <footer class="footer-style">
+        <p class="text-footer">@2025 Goeco</p>
+        <p class="text-footer">Données: Ville de Paris</p>
+    </footer>
+</body>
+</html>

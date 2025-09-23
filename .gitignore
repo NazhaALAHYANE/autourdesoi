@@ -8,5 +8,6 @@ myenv/
 *.sqlite3
 
 ----------------------------------------
+# Fichier de configuration
 __pycache__/
 *.pyc

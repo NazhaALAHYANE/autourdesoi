@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.title-color {
+    text-align: center;
+    color: #55c265;
+    margin: 50px;
+}
+
+.table-containe {
+    text-align: center;
+}
+
+.table-container {
+    display:inline-block
+    
+} 
+
+.title-collumn th {
+    padding: 20px;
+    color: #55c265;
+    border: 1px solid #f2e3fe;
+}
+
+.data-collumn td  {
+    padding: 20px;
+    border: 1px solid;
+}
+
+.not-found td {
+    border: 1px solid #f2e3fe;
+    color: #55c265;
+}
+

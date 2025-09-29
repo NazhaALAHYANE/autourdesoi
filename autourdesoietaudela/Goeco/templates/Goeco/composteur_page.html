@@ -1,0 +1,36 @@
+{% extends "Goeco/base.html" %} 
+{% load static %} 
+{% block title %}Liste des Composteurs{% endblock %} 
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'Goeco/css/composteurs.css' %}?v={{ timestamp }}">
+{% endblock %} {% block content %}
+<h1 class="title-color">Liste des Composteurs</h1>
+<div></div>
+<div class="table-containe">
+  <table class="table-container">
+    <thead class="title-collumn">
+      <tr>
+        <th>Nom du site</th>
+        <th>Entité chargé du composteur</th>
+        <th>Adresse de l'emplacement</th>
+        <th>Arrondissement</th>
+      </tr>
+    </thead>
+    <tbody class="data-collumn">
+        {% for composteur in composteurs %}
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        {% empty %}   
+            <tr class="not-found">
+              <td colspan="4">Aucun composteur trouvé.</td>
+            </tr> 
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

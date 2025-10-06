@@ -6,7 +6,9 @@
 <link rel="stylesheet" href="{% static 'Goeco/css/composteurs.css' %}?v={{ timestamp }}">
 {% endblock %} {% block content %}
 <h1 class="title-color">Liste des Composteurs</h1>
-<div></div>
+<div class="map-container">
+  <iframe src="https://opendata.paris.fr/explore/embed/dataset/dechets-menagers-points-dapport-volontaire-composteurs/map/?disjunctive.operateur&disjunctive.arrdt&disjunctive.cquartier&basemap=jawg.dark&location=8,48.38043,3.29967&static=false&datasetcard=false&scrollWheelZoom=false" width="600" height="450" frameborder="0"></iframe>
+</div>
 <div class="table-containe">
   <table class="table-container">
     <thead class="title-collumn">
@@ -20,10 +22,10 @@
     <tbody class="data-collumn">
         {% for composteur in composteurs %}
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>{{ composteur.nom }}</td>
+              <td>{{ composteur.entite|default:"-" }}</td>
+              <td>{{ composteur.adresse }}</td>
+              <td>{{ composteur.arrondissement|default:"-" }}</td>
             </tr>
         {% empty %}   
             <tr class="not-found">

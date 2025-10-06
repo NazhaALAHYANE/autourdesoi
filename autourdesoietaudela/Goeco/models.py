@@ -9,7 +9,7 @@ class Composteur(models.Model):
     arrondissement= models.CharField(max_length=10, blank=True, null=True, verbose_name="Arrodissement")
 
     def __str__(self):
-        return self.nom
+        return self.nom if self.nom else "Nom inconnu"
 
 class RecyclerieRessourcerie(models.Model):
     operateur= models.CharField(max_length=255, verbose_name="Opérateur")

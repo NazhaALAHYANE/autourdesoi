@@ -1,7 +1,7 @@
 # Projet Django Initiatives Écologiques à Paris
 
 
-![Aperçu de la page d'accueil](autourdesoietaudela/Goeco/images/Accueil.png)
+![Aperçu de la page d'accueil](Goeco/static/images/Accueil.png)
 
 Ce projet et un site web développé avec Django et PostgreSQL qui recense différentes initiatives écologiques à Paris, comme les composteurs et les recycleries ainsi que les ressourceries.
 
@@ -22,7 +22,7 @@ Ce projet et un site web développé avec Django et PostgreSQL qui recense diff�
 
 - Modèles pour les lieux créés.
 - Affichage de la première initiative (Composteurs) fonctionnel. 8 composteurs disponible à titre de démonstration. Le reste des données (88 au total) seront ajouté par la suite.
-- Le projet est en développement : d'autres fonctionnalités (barre de recherche, responsive et intégration d'API) seront ajouté plus tard.
+- Le projet est en développement : d'autres fonctionnalités (barre de recherche, responsive ainsi que l'intégration d'API) seront ajouté plus tard.
 
 ## Installation 
 
@@ -38,6 +38,6 @@ python manage.py runserver
 
 ### Page des composteurs 
 
-![Aperçu de la page des composteurs](autourdesoiaudela/Goeco/images/Composteurs-capture1.png)
+![Aperçu de la page des composteurs](Goeco/static/images/Composteurs-capture1.png)
 
-![Aperçu de la page des composteurs](autourdesoietaudela/Goeco/images/Composteurs-capture2.png)
+![Aperçu de la page des composteurs](Goeco/static/images/Composteurs-capture2.png)
